@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盗链测试</title>
+</head>
+<body>
+	<h4>测试对微信公众号图片的盗链，右侧使用了daoImg，左侧普通方式引入。</h4>
+<div>
+<div style="width:40%;display:inline-block;">
+<ul>
+	<li><img class="feedimg" data-original="http://mmbiz.qpic.cn/mmbiz/GxK5OBsCj0OLeohVVzicY1LRPPdM5G0ZLK62xiajIeNI8hDHzndS6BolfKkJ1hKGyNHcDQS5bAibLJKjVdnbyZ4Jw/0?wx_fmt=gif" ></li>
+    <li><img class="feedimg" data-original="http://mmbiz.qpic.cn/mmbiz/MiatkCbSoh0qOLic54dkX8eX8LDUaVVNd1800ibdHm6oIibfYd5UickQicGyOhjxZMhN9ektEY2EPvFqHRnR0rp8nfog/0" ></li>
+	<li><img class="feedimg" data-original="http://mmbiz.qpic.cn/mmbiz/MiatkCbSoh0qOLic54dkX8eX8LDUaVVNd1STk76EzBZO6c6wibBEUWPDZ8X92kIhwvxUj38RNvxL2ddYbUxama2rw/0" ></li>
+	<li><img class="feedimg" data-original="http://mmbiz.qpic.cn/mmbiz/MiatkCbSoh0q3sd4pTW2GdUricAca0nFC1uibHrvrAwLa4GMgeGum8qRDScqdDSDCckTU9EbVNcLsGLZwiaviaL1T0w/0" ></li>
+	<li><img class="feedimg" data-original="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAymNQxgBcibRjmPx3FIrLiaBlEfA0GfpiagrWRmVEibNdmT0QNia4fupoRzCZC70lpSY6M94lcL1XcHNBgg/0?wx_fmt=jpeg" ></li>
+</ul>
+</div>
+<div style="width:40%;display:inline-block;">1</div>
+<div>
+<ul>
+	<li><img src="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAykqpzjha95Zp2X7ZObguzxFabgmiaibavYCzIbcoTiaQmibtLhXV7vvsstWDBuYHXwz0txnPZQ5VhL93A/0" ></li>
+    <li><img src="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAykqpzjha95Zp2X7ZObguzxFgvyxF7C8sfdGBichlNnjpXSiaJIYVKZT85sU1ibW6d8aFltYmbmYLSBPQ/0" ></li>
+	<li><img src="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAylXrNRwO5W3tjujicm3fVZ1Yrl6nicFsd1SUb9akfl6RdAuH2mibhicOYcp7SqtpZuRQGUmfz2SECpciag/0" ></li>
+	<li><img src="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAynMhGZ7uLeGIymcPia3udFfFsiaAeibpiaQxM9VY9u5OuIAJufhcpxbQK1xLUFibZBz8feqGndazVxibr7w/0" ></li>
+	<li><img src="http://mmbiz.qpic.cn/mmbiz/1fPg1v5yAykch3omEjU1nsw9viayuFnlPbxZzT1ia1Py034Rh0Db7NcRTQYoZiapy95k2feucAXetwDsvlZBAE4yQ/0" ></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./daoImg.js"></script>
+<script type="text/javascript">
+    /**
+     *  将图片链接地址放在属性data-original，daoImg放入需要盗链图片的类名
+     */
+	daoImg(".feedimg");
+</script>
+</body>
+</html>
